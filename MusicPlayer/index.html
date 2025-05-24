@@ -7,37 +7,58 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>MusicPlayer</title>
   </head>
   <body>
     <div class="container">
-      <img id="music-image" src="" alt="" />
-      <audio id="audio" src=""></audio>
-      <div class="music-details">
-        <p class="title"></p>
-        <p class="singer"></p>
-      </div>
-      <div id="progress">
-        <input type="range" id="progress-bar" />
-        <div class="times">
-          <span id="current-time">0:00</span>
-          <span id="duration">0:00</span>
+      <div class="card shadow-lg rounded">
+        <img id="music-image" class="card-img-top" />
+        <audio id="audio" src=""></audio>
+        <div id="music-details" class="text-center border-bottom my-3">
+          <p class="title"></p>
+          <p class="singer"></p>
         </div>
-      </div>
-      <div id="controls">
-        <div>
-          <i id="prev" class="fa-solid fa-backward-step"></i>
-          <i id="play" class="fa-solid fa-play"></i>
-          <i id="next" class="fa-solid fa-forward-step"></i>
+        <div class="card-body">
+          <div id="progress">
+            <input type="range" id="progress-bar" class="form-range" />
+            <div class="times">
+              <span id="current-time">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+          </div>
+          <div id="controls" class="text-center">
+            <button id="prev" class="btn btn-primary rounded-circle">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button
+              id="play"
+              class="btn btn-primary rounded-circle btn-lg mx-2"
+            >
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="next" class="btn btn-primary rounded-circle">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+          </div>
         </div>
-        <div>
-          <i id="volume" class="fa-solid fa-volume-high"></i>
-          <input type="range" id="volume-bar" max="100" value="100" />
+        <div class="card-footer">
+          <button class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="volume-container">
+            <i id="volume" class="fa-solid fa-volume-high"></i>
+            <input type="range" id="volume-bar" max="100" value="100" class="form-range" />
+          </div>
         </div>
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <script src="music.js"></script>
     <script src="musicplayer.js"></script>
     <script src="app.js"></script>
