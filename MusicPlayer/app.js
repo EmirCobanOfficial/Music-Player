@@ -30,22 +30,18 @@ play.addEventListener("click", () => {
     isMusicPlay ? pauseMusic() : playMusic();
 });
 
-prev.addEventListener("click", () => {
-    prevMusic();
-});
+prev.addEventListener("click", () => { prevMusic(); });
 
-next.addEventListener("click", () => {
-    nextMusic();
-});
+next.addEventListener("click", () => { nextMusic(); });
 
-function nextMusic() {
+const nextMusic = () => {
     player.next();
     let music = player.getMusic();
     displayMusic(music);
     playMusic();
 }
 
-function prevMusic() {
+const prevMusic = () => {
     player.prev();
     let music = player.getMusic();
     displayMusic(music);
@@ -53,13 +49,13 @@ function prevMusic() {
 }
 
 
-function pauseMusic() {
+const pauseMusic = () => {
     container.classList.remove("playing")
     play.classList = "fa-solid fa-play"
     audio.pause();
 }
 
-function playMusic() {
+const playMusic = () => {
     container.classList.add("playing")
     play.classList = "fa-solid fa-pause"
     audio.play();
@@ -111,4 +107,9 @@ volume.addEventListener("click", () => {
         volume.classList = "fa-solid fa-volume-high";
         volumeBar.value = 100;
     }
+});
+
+progressBar.addEventListener("input", () => {
+    currentTime.textContent = calculateTime(progressBar.value);
+    audio.currentTime = progressBar.value;
 });
