@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 const image = document.querySelector("#music-image");
-const title = document.querySelector(".music-details .title");
-const singer = document.querySelector(".music-details .singer");
+const title = document.querySelector("#music-details .title");
+const singer = document.querySelector("#music-details .singer");
 const prev = document.querySelector("#controls #prev");
 const play = document.querySelector("#controls #play");
 const next = document.querySelector("#controls #next");
@@ -51,13 +51,13 @@ const prevMusic = () => {
 
 const pauseMusic = () => {
     container.classList.remove("playing")
-    play.classList = "fa-solid fa-play"
+    play.querySelector("i").classList = "fa-solid fa-play"
     audio.pause();
 }
 
 const playMusic = () => {
     container.classList.add("playing")
-    play.classList = "fa-solid fa-pause"
+    play.querySelector("i").classList = "fa-solid fa-pause"
     audio.play();
 }
 
