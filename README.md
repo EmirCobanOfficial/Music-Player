@@ -1,30 +1,44 @@
-# 🎵 Basit Web Tabanlı Müzik Çalar
 
-Bu proje, JavaScript kullanılarak geliştirilmiş basit bir müzik çalar uygulamasıdır. Kullanıcı, şarkıları listeleyebilir, oynatabilir, durdurabilir, ileri/geri alabilir ve ses kontrolü yapabilir.
+# 🎵 Simple Web-Based Music Player / Basit Web Tabanlı Müzik Çalar
 
-## 🚀 Özellikler
+A lightweight and responsive web music player built with JavaScript. It allows users to play, pause, skip tracks, control volume, and view the song list with visuals.
 
-- ⏯️ Şarkı oynatma, duraklatma
-- ⏭️ Sonraki/önceki şarkıya geçiş
-- 📃 Şarkı listesi gösterimi
-- 🎚️ Ses ayarı ve sessize alma
-- ⏱️ Şarkı süresi ve geçerli süre bilgisi
-- 📷 Şarkıya özel görsel
-- 🎧 Oynatılan şarkının listede vurgulanması
-- 📱 Basit ve mobil uyumlu tasarım
+JavaScript ile geliştirilmiş hafif ve mobil uyumlu bir müzik çalar. Şarkı oynatma, duraklatma, geçiş yapma, ses kontrolü gibi özellikler içerir.
 
-## 🛠️ Kullanılan Teknolojiler
+---
 
-- HTML5
-- CSS3 (Bootstrap destekli)
-- JavaScript
-- Font Awesome (ikonlar için)
+## 🚀 Features / Özellikler
 
-## 🖼️ Ekran Görüntüsü
+- ⏯️ Play / Pause songs – Şarkı oynatma ve duraklatma  
+- ⏭️ Next / Previous track – Sonraki / önceki şarkıya geçiş  
+- 📃 Display song list – Şarkı listesi gösterimi  
+- 🎚️ Volume control & mute – Ses ayarı ve sessize alma  
+- ⏱️ Track duration display – Şarkı süresi ve geçerli süre bilgisi  
+- 📷 Custom cover images – Şarkıya özel görseller  
+- 🎧 Highlight currently playing track – Oynatılan şarkının vurgulanması  
+- 📱 Mobile-friendly UI – Mobil uyumlu kullanıcı arayüzü  
 
-![Müzik Çalar Ekran Görüntüsü](https://github.com/user-attachments/assets/ea1c737a-f30b-4b53-9157-aa14f7529075)
+---
 
-⚠️ Notlar
-MP3 ve görsel dosyaların adlarında Türkçe karakter kullanmamaya özen gösterin.
+## 🛠️ Built With / Kullanılan Teknolojiler
 
-Dosyaları kendi sunucunuza yüklemeden önce dosya yollarını kontrol edin.
+- HTML5  
+- CSS3 (with Bootstrap)  
+- JavaScript  
+- Font Awesome (for icons)  
+
+---
+
+## 🖼️ Screenshot / Ekran Görüntüsü
+
+![Music Player Screenshot](https://github.com/user-attachments/assets/ea1c737a-f30b-4b53-9157-aa14f7529075)
+
+---
+
+## ⚠️ Notes / Notlar
+
+- Please avoid using special characters (like Turkish letters) in MP3 or image file names.  
+  MP3 ve görsel dosya adlarında Türkçe karakter kullanmamaya dikkat edin.
+
+- Double-check file paths if you move the project to a different server.  
+  Projeyi başka bir sunucuya taşırsanız, dosya yollarını kontrol edin.
