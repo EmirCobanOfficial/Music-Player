@@ -11,6 +11,7 @@ const progressBar = document.querySelector("#progress-bar");
 const volume = document.querySelector("#volume");
 const volumeBar = document.querySelector("#volume-bar");
 const ul = document.querySelector("ul");
+const audio = document.querySelector("#audio");
 
 
 const player = new MusicPlayer(musicList);
@@ -141,7 +142,7 @@ const displayMusicList = (list) => {
 }
 
 const selectedMusic = (li) => {
-    player.index = li.getAttribute("li-index");
+    player.index = Number(li.getAttribute("li-index"));
     displayMusic(player.getMusic());
     playMusic();
     isPlayingNow();
